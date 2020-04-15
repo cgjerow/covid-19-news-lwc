@@ -1,0 +1,14 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item class={tileClass}>
+            <article class="article-item">
+                <a class="article-title" target="_blank" href={item.link}>{item.title}</a>
+                <div>{item.source}</div>
+                <div>{item.channel.title}</div>
+                <div>{item.pubDate}</div>
+                <br/>
+                <div class="article-description">{item.description}</div>
+            </article>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

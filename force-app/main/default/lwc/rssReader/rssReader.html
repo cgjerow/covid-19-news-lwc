@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <h1 class="articleTitle" slot="title">Covid-19 News</h1>
+        <lightning-layout class="carousel slds-m-left_small slds-m-right_small">
+            <template iterator:item={_rssItems}>
+                <lightning-layout-item key={item.value.guid}>
+                    <c-rss-reader-carousel-tile
+                        key={item.value.guid}
+                        item={item.value}
+                        is-first={item.first}
+                        is-last={item.last}
+                    ></c-rss-reader-carousel-tile>
+                </lightning-layout-item>
+            </template>
+        </lightning-layout>
+    </lightning-card>
+</template>

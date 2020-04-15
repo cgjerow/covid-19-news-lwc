@@ -1,0 +1,30 @@
+.article-item {
+    height: 240px;
+    width: 256px;
+}
+
+html {
+    --lwc-spacingXLarge: 2.2rem;
+}
+
+.article-title {
+    font-weight: bold;
+    color: black;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 2.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-description {
+    color: black;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    max-height: 4.2rem;
+}
